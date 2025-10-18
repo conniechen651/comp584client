@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class CountryPopulation {
   country!: PopulationData;
   constructor(http: HttpClient){
-    http.get<PopulationData>(environment.apiUrl + 'api/Countries/population/26').subscribe(result => {
+    http.get<PopulationData>(environment.apiUrl + 'api/Countries/population/26q').subscribe(result => {
       this.country = result;
     });
   }
